@@ -33,7 +33,7 @@ def ma(x0, target, proposal, spread, N, burnIn, lag):
 
 
     samples = np.zeros(N)
-    samples[0] = x1  # Initial seed for the chain
+    samples[0] = x0  # Initial seed for the chain
     acc = 0  # Count the number of accepted samples
 
     for i in range(N - 1):
